@@ -15,7 +15,6 @@ export default function Choice({ letterpos, attemptpos }) {
   const letter = board[attemptpos][letterpos];
   var word = "";
   const correct = correctword[letterpos] === letter.toLowerCase();
-  console.log("->", correctword[letterpos], letter,correct);
   const almost = letter !== "" && correctword.includes(letter.toLowerCase());
 
   if (currentpos.row > attemptpos) {

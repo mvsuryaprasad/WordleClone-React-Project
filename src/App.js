@@ -48,9 +48,7 @@ export default function App() {
     curr = curr.toLowerCase();
     if (correctword === curr) {
       setgameover({ GameOver: true, guessesWord: true });
-    }
-
-    if (currentpos.row === 5) {
+    } else if (currentpos.row === 5) {
       setgameover({ GameOver: true, guessesWord: false });
     }
 
@@ -108,7 +106,8 @@ export default function App() {
           </center>
         ) : gameover.GameOver === true ? (
           <center>
-            <h3>GameOver ! Better luck next time</h3>
+            <h3>GameOver ! Better luck next time.</h3>
+            <h3>The word is {correctword.toUpperCase()}</h3>
           </center>
         ) : (
           <Keyboard></Keyboard>
