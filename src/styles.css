@@ -1,0 +1,137 @@
+body {
+  background-color: azure;
+  margin: 0;
+}
+
+.App {
+  font-family: sans-serif;
+}
+
+.Nav {
+  background-color: cornflowerblue;
+  color: aliceblue;
+  border: 1px solid black;
+  max-height: 60px;
+}
+
+.main-board {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+  margin-top: 5%;
+}
+.row {
+  display: flex;
+  gap: 5px;
+  font-size: 100%;
+}
+.column {
+  display: flex;
+  border: 1px solid black;
+  cursor: pointer;
+  height: 52px;
+  width: 47px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2px;
+}
+
+.keyboard {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  align-items: center;
+}
+
+.keys1 {
+  display: flex;
+  gap: 4px;
+}
+.keys2 {
+  display: flex;
+  gap: 4px;
+}
+.keys3 {
+  display: flex;
+  gap: 4px;
+}
+
+.keys {
+  display: flex;
+  border: 1px solid black;
+  height: 40px;
+  width: 26px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  background-color: cornflowerblue;
+  cursor: pointer;
+  color: aliceblue;
+}
+
+.keys3-enter,
+.keys3-delete {
+  border: 1px solid black;
+  height: 40px;
+  width: 43px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: aliceblue;
+  background-color: cornflowerblue;
+  border-radius: 4px;
+  font-size: 10px;
+}
+
+#correct {
+  background-color: green;
+}
+
+#almost {
+  background-color: yellow;
+}
+
+#wrong {
+  background-color: grey;
+}
+
+.disabled {
+  display: flex;
+  border: 1px solid black;
+  height: 40px;
+  width: 26px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  background-color: grey;
+  cursor: pointer;
+  color: aliceblue;
+}
+
+.almost {
+  display: flex;
+  border: 1px solid black;
+  height: 40px;
+  width: 26px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  background-color: yellow;
+  cursor: pointer;
+  color: aliceblue;
+}
+
+.correct {
+  display: flex;
+  border: 1px solid black;
+  height: 40px;
+  width: 26px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  background-color: green;
+  cursor: pointer;
+  color: aliceblue;
+}
